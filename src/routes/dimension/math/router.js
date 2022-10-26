@@ -1,7 +1,7 @@
 import Math from './index';
 
 export const mathRouter = {
-    path: "/padmasambhava/dimension/math",
+    path: "/padmasambhava/dimension/math/",
     element: <Math />,
     children: [
       {
