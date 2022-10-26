@@ -1,7 +1,7 @@
 import AriticialIntelligence from './index';
 
 export const aiRouter = {
-    path: "/padmasambhava/dimension/ai/",
+    path: "ai",
     element: <AriticialIntelligence />,
     children: [
       {

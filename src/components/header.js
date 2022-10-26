@@ -32,7 +32,7 @@ export const Header = ({}) => {
     return (
         <header>
             <Row position="fixed" width="100vw" style={{top: 0, left: 0}} align="center" justify="space-between" ptb="10px" prl="15px">
-                <Link to="/padmasambhava/">
+                <Link to="/">
                     <Row to="opacity: 0.85" align="center" justify="center">
                         <Image width="50px" height="50px" src={Padmasambhava} />
                         <Text ff="Crimson Text" weight="700" ml="10px" mt="5.5px" size={22}>PADMASAMBHVA</Text>
@@ -40,7 +40,7 @@ export const Header = ({}) => {
                 </Link>
                 <nav>
                     <Row align="center" justify="space-between"  padding={10} position="absolute" style={{top: 18, right: menuClick ? 70: -300, opacity: menuClick ? 1 : 0, transition: 'all 500ms ease-in-out'}} zIndex={1000}>
-                        <Link to="/padmasambhava/dimension">
+                        <Link to="/dimension">
                             <HeadText onMouseEnter={() => setHover({...hover, dimension: {children: hover.dimension.children, hover: true}})}>DIMENSION</HeadText>
                         </Link>
                         {/* <Col>
@@ -50,7 +50,7 @@ export const Header = ({}) => {
                                 <HeadText>ARTIFICIAL INTELLIGENCE</HeadText>
                             </Row>
                         </Col> */}
-                        <Link to="/padmasambhava/about">
+                        <Link to="/about">
                             <HeadText>ABOUT</HeadText>
                         </Link>
                     </Row>

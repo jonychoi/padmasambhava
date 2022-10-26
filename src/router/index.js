@@ -12,7 +12,7 @@ import contactRouter from '../routes/contact/router';
 
 export const GlobalRouter = createBrowserRouter([
     {
-        path: "/padmasambhava",
+        path: "/",
         element: (
           <>
               <Header />
