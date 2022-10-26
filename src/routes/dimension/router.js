@@ -9,7 +9,7 @@ import aiRouter from './artificialintelligence/router';
 import { Outlet } from 'react-router-dom';
 
 export const dimensionRouter = {
-    path: "/padmasambhava/dimension",
+    path: "/padmasambhava/dimension/",
     element: (
       <>
           <Header />

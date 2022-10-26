@@ -1,11 +1,11 @@
 import AriticialIntelligence from './index';
 
 export const aiRouter = {
-    path: "/ai",
+    path: "ai",
     element: <AriticialIntelligence />,
     children: [
       {
-        path: "/:articleId",
+        path: ":articleId",
         element: <AriticialIntelligence />
       }
     ]
