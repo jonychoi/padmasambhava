@@ -1,11 +1,11 @@
 import Space from './index';
 
 export const spaceRouter = {
-    path: "space",
+    path: "/space",
     element: <Space />,
     children: [
       {
-        path: ":articleId",
+        path: "/:articleId",
         element: <Space />
       }
     ]
