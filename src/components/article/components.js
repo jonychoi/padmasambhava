@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { themeInverser, themeTexter } from '../../styles';
 
 // Comments
-import Comments from '../comment';
+import Comment from '../comment';
 
 const ATag = styled.a`
     text-decoration: none;
@@ -22,7 +22,7 @@ export const ArticleBox = ({article}) => {
             <Col width="100%">
                 <ArticleHead head={article.head} />
                 <ArticleParagraph paragraphs={article.paragraphs}/>
-                <Comments article={article.head} />
+                <Comment />
             </Col>
         </article>
     )
