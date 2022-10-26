@@ -1,7 +1,7 @@
 import Contact from './index';
 
 export const contactRouter = {
-    path: "contact",
+    path: "padmasambhava/contact",
     element: <Contact />
 };
 

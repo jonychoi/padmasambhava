@@ -7,9 +7,7 @@ export const Math = ({}) => {
         head: {
             date: "September 5, 2022",
             title: "Between the Desire and Brightness",
-            url: "http://localhost:3000/dimension/math/0",
             id: "0",
-            featuredCommentId: "0"
         },
         paragraphs: [
             {
