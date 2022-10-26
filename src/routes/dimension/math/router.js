@@ -1,11 +1,11 @@
 import Math from './index';
 
 export const mathRouter = {
-    path: "math",
+    path: "/padmasambhava/dimension/math",
     element: <Math />,
     children: [
       {
-        path: ":articleId",
+        path: "/padmasambhava/dimension/:articleId",
         element: <Math />
       }
     ]

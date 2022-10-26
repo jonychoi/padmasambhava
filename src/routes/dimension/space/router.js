@@ -1,11 +1,11 @@
 import Space from './index';
 
 export const spaceRouter = {
-    path: "space",
+    path: "/padmasambhava/dimension/space",
     element: <Space />,
     children: [
       {
-        path: ":articleId",
+        path: "/padmasambhava/dimension/:articleId",
         element: <Space />
       }
     ]
