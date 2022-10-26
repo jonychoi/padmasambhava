@@ -5,7 +5,7 @@ export const mathRouter = {
     element: <Math />,
     children: [
       {
-        path: "/padmasambhava/dimension/:articleId",
+        path: ":articleId",
         element: <Math />
       }
     ]

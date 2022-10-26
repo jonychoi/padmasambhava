@@ -5,7 +5,7 @@ export const aiRouter = {
     element: <AriticialIntelligence />,
     children: [
       {
-        path: "/padmasambhava/dimension/:articleId",
+        path: ":articleId",
         element: <AriticialIntelligence />
       }
     ]

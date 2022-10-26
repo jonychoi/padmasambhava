@@ -5,7 +5,7 @@ export const spaceRouter = {
     element: <Space />,
     children: [
       {
-        path: "/padmasambhava/dimension/:articleId",
+        path: ":articleId",
         element: <Space />
       }
     ]
