@@ -3,7 +3,7 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 
 export const aboutRouter = {
-    path: "padmasambhava/about",
+    path: "/padmasambhava/about",
     element: (
         <>
             <Header />
