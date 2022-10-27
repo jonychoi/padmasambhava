@@ -1,6 +1,8 @@
 import Giscus from '@giscus/react';
+import {ThemeEvent} from '../../contexts/globalcontext';
 
 export const Comment = () => {
+  const {theme} = ThemeEvent();
   return (
     <Giscus
       id="comments"
@@ -12,7 +14,7 @@ export const Comment = () => {
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
-      theme="dark"
+      theme={theme === "day" ? "light" : "dark"}
       lang="en"
       loading="lazy"
     />

@@ -1,12 +1,13 @@
 import React from 'react';
-import { ArticleBox } from '../../../components/article/components';
-import {Screen} from '../../../components/base';
+import { ArticleBox } from '../../components/article/components';
+import {Screen} from '../../components/base';
 
-export const AI = ({}) => {
+export const Philosophy = ({}) => {
     const article = {
         head: {
             date: "September 5, 2022",
-            title: "Between the Desire and Brightness"
+            title: "Between the Desire and Brightness",
+            id: "0",
         },
         paragraphs: [
             {
@@ -36,4 +37,4 @@ export const AI = ({}) => {
     )
 };
 
-export default AI;
+export default Philosophy;

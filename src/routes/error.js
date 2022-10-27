@@ -1,10 +1,9 @@
 import { useRouteError } from "react-router-dom";
 import {Screen, Text} from '../components/base';
 
-export default function ErrorPage() {
+export const Error = ({}) => {
   const error = useRouteError();
   console.error(error);
-
   return (
     <Screen>
       <Text>Oops!</Text>
@@ -14,4 +13,6 @@ export default function ErrorPage() {
       </Text>
     </Screen>
   );
-}
+};
+
+export default Error;

@@ -1,11 +1,8 @@
-import React from 'react';
-import {Screen} from '../../components/base';
+import About from './about';
 
-export const About = ({}) => {
-    return (
-        <Screen>
-        </Screen>
-    )
+export const aboutRouter = {
+    path: 'about',
+    element: <About />,
 };
 
-export default About;
+export default aboutRouter;

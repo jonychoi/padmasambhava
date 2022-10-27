@@ -9,7 +9,7 @@ const HeadText = styled(Text)`
         cursor: pointer;
         opacity: 0.85
     };
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     margin: 0px 25px;
     font-family: 'Montserrat', sans-serif;
@@ -39,23 +39,25 @@ export const Header = ({}) => {
                     </Row>
                 </Link>
                 <nav>
-                    <Row align="center" justify="space-between"  padding={10} position="absolute" style={{top: 18, right: menuClick ? 70: -300, opacity: menuClick ? 1 : 0, transition: 'all 500ms ease-in-out'}} zIndex={1000}>
-                        <Link to="/dimension">
-                            <HeadText onMouseEnter={() => setHover({...hover, dimension: {children: hover.dimension.children, hover: true}})}>DIMENSION</HeadText>
+                    <Row align="center" justify="space-between" padding={10} position="absolute" style={{top: 18, right: menuClick ? 70: -400, opacity: menuClick ? 1 : 0, transition: 'all 500ms ease-in-out'}} zIndex={100}>
+                        <Link to="/overview">
+                            <HeadText>OVERVIEW</HeadText>
                         </Link>
-                        {/* <Col>
-                            <Row mt="10">
-                                <HeadText>SPACE</HeadText>
-                                <HeadText>MATH</HeadText>
-                                <HeadText>ARTIFICIAL INTELLIGENCE</HeadText>
-                            </Row>
-                        </Col> */}
+                        <Link to="/intelligence">
+                            <HeadText onMouseEnter={() => setHover({...hover, dimension: {children: hover.dimension.children, hover: true}})}>INTELLIGENCE</HeadText>
+                        </Link>
+                        <Link to="/philosophy">
+                            <HeadText>PHILOSOPHY</HeadText>
+                        </Link>
+                        <Link to="/system">
+                            <HeadText>SYSTEM</HeadText>
+                        </Link>
                         <Link to="/about">
                             <HeadText>ABOUT</HeadText>
                         </Link>
                     </Row>
                     <DimensionBtn click={menuClick} setClicked={setMenuClicked} hover={hover} setHover={setHover} />
-                    <Flex position="absolute" us="none" style={{right: 80, top: 20, opacity: menuClick ? 0 : 1}}>
+                    <Flex position="absolute" us="none" zIndex={1000} style={{right: menuClick? -100 : 80, top: 20, opacity: menuClick ? 0 : 1}}>
                         <ThemeBtn menuClick={menuClick} />
                     </Flex>
                 </nav>

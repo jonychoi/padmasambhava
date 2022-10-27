@@ -12,6 +12,9 @@ export const Globalstyle = createGlobalStyle`
         overflow-y: scroll;
         background-color: ${props => props.theme === "dark" ? "black" : "white"}
     };
+    #root {
+        background-color: ${props => props.theme === "dark" ? "black" : "white"}
+    }
     /*-----------FONTS----------*/
 
     @font-face {

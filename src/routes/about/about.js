@@ -1,11 +1,12 @@
 import React from 'react';
 import {Screen} from '../../components/base';
 
-export const Contact = ({}) => {
+export const About = ({}) => {
     return (
-        <Screen bgdark="red">
+        <Screen>
+            About
         </Screen>
     )
 };
 
-export default Contact;
+export default About;
