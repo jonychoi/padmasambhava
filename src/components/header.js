@@ -39,7 +39,7 @@ export const Header = ({}) => {
                     </Row>
                 </Link>
                 <nav>
-                    <Row align="center" justify="space-between" padding={10} position="absolute" style={{top: 18, right: menuClick ? 70: -400, opacity: menuClick ? 1 : 0, transition: 'all 500ms ease-in-out'}} zIndex={100}>
+                    <Row align="center" justify="space-between" padding={10} position="absolute" style={{top: 18, right: menuClick ? 70: -800, opacity: menuClick ? 1 : 1, transition: 'all 500ms ease-in-out'}} zIndex={100}>
                         <Link to="/overview">
                             <HeadText>OVERVIEW</HeadText>
                         </Link>
