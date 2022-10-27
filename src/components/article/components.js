@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Flex, Col, Row, Text, Image} from '../../components/base';
 import styled from 'styled-components';
 import { themeInverser, themeTexter } from '../../styles';
@@ -17,12 +17,18 @@ const ATag = styled.a`
 `;
 
 export const ArticleBox = ({article}) => {
+    useEffect(() => {
+        const titler = () => {
+            document.title = article.head.title;
+        };
+        titler();
+    }, [])
     return (
         <article style={{width: '100%'}}>
             <Col width="100%">
                 <ArticleHead head={article.head} />
                 <ArticleParagraph paragraphs={article.paragraphs}/>
-                <Comment />
+                <Comment head={article.head} />
             </Col>
         </article>
     )

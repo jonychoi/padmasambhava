@@ -1,15 +1,16 @@
 import Giscus from '@giscus/react';
 import {ThemeEvent} from '../../contexts/globalcontext';
 
-export const Comment = () => {
+export const Comment = ({head}) => {
   const {theme} = ThemeEvent();
   return (
     <Giscus
       id="comments"
       repo="jonychoi/padmasambhava"
       repoId="R_kgDOIUEUuQ"
-      categoryId="DIC_kwDOIUEUuc4CSOpq"
-      mapping="pathname"
+      category={head.category}
+      categoryId={head.categoryId}
+      mapping="title"
       term="Welcome to @giscus/react component!"
       reactionsEnabled="1"
       emitMetadata="0"

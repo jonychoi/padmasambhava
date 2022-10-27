@@ -7,7 +7,8 @@ export const Philosophy = ({}) => {
         head: {
             date: "September 5, 2022",
             title: "Between the Desire and Brightness",
-            id: "0",
+            category: "[Article] Philosophy / Buddhism",
+            categoryId: "DIC_kwDOIUEUuc4CSO6o",
         },
         paragraphs: [
             {
